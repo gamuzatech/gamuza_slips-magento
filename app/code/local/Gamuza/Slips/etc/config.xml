@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Gamuza Slips - Slips and Deposits for Magento platform.
+ * Copyright (C) 2013 Gamuza Technologies (http://www.gamuza.com.br/)
+ * Author: Eneias Ramos de Melo <eneias@gamuza.com.br>
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Library General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Library General Public License for more details.
+ *
+ * You should have received a copy of the GNU Library General Public
+ * License along with this library; if not, write to the
+ * Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ * Boston, MA  02110-1301, USA.
+ */
+
+/*
+ * See the AUTHORS file for a list of people on the Gamuza Team.
+ * See the ChangeLog files for a list of changes.
+ * These files are distributed with Gamuza_Slips at http://code.google.com/p/gamuzaopen/.
+ */
+-->
+
+<config>
+  <modules>
+    <Gamuza_Slips>
+      <version>0.0.3</version>
+    </Gamuza_Slips>
+  </modules>
+  <global>
+    <helpers>
+      <slips>
+        <class>Gamuza_Slips_Helper</class>
+      </slips>
+    </helpers>
+	<blocks>
+	  <slips>
+		<class>Gamuza_Slips_Block</class>
+	  </slips>
+	</blocks>
+	<models>
+	  <slips>
+		<class>Gamuza_Slips_Model</class>
+		<resourceModel>slips_mysql4</resourceModel>
+	  </slips>
+	  <slips_mysql4>
+		<class>Gamuza_Slips_Model_Mysql4</class>
+		<entities>
+		  <transactions>
+			<table>gamuza_slips_transactions</table>
+		  </transactions>
+        </entities>
+	  </slips_mysql4>
+	</models>
+	<resources>
+	  <slips_setup>
+		<setup>
+		  <module>Gamuza_Slips</module>
+		</setup>
+		<connection>
+		  <use>core_setup</use>
+		</connection>
+	  </slips_setup>
+	  <slips_write>
+		<connection>
+		  <use>core_write</use>
+		</connection>
+	  </slips_write>
+	  <slips_read>
+		<connection>
+		  <use>core_read</use>
+		</connection>
+	  </slips_read>
+	</resources>
+	<payment>
+	    <slips>
+		<types>
+		    <BRADESCO_DEPOSIT>
+			<code>BRADESCO_DEPOSIT</code>
+			<name>Bradesco Deposit</name>
+			<order>0</order>
+		    </BRADESCO_DEPOSIT>
+		    <BRADESCO_SLIP>
+			<code>BRADESCO_SLIP</code>
+			<name>Bradesco Slip</name>
+			<order>1</order>
+		    </BRADESCO_SLIP>
+		    <SANTANDER_DEPOSIT>
+			<code>SANTANDER_DEPOSIT</code>
+			<name>Santander Deposit</name>
+			<order>0</order>
+		    </SANTANDER_DEPOSIT>
+		    <SANTANDER_SLIP>
+			<code>SANTANDER_SLIP</code>
+			<name>Santander Slip</name>
+			<order>1</order>
+		    </SANTANDER_SLIP>
+		    <BB_DEPOSIT>
+			<code>BB_DEPOSIT</code>
+			<name>Banco do Brasil Deposit</name>
+			<order>0</order>
+		    </BB_DEPOSIT>
+		    <BB_SLIP>
+			<code>BB_SLIP</code>
+			<name>Banco do Brasil Slip</name>
+			<order>1</order>
+		    </BB_SLIP>
+		    <UNIBANCO_DEPOSIT>
+			<code>UNIBANCO_DEPOSIT</code>
+			<name>Unibanco Deposit</name>
+			<order>0</order>
+		    </UNIBANCO_DEPOSIT>
+		    <UNIBANCO_SLIP>
+			<code>UNIBANCO_SLIP</code>
+			<name>Unibanco Slip</name>
+			<order>1</order>
+		    </UNIBANCO_SLIP>
+		    <CEF_DEPOSIT>
+			<code>CEF_DEPOSIT</code>
+			<name>CEF Deposit</name>
+			<order>0</order>
+		    </CEF_DEPOSIT>
+		    <CEF_SLIP>
+			<code>CEF_SLIP</code>
+			<name>CEF Slip</name>
+			<order>1</order>
+		    </CEF_SLIP>
+		    <HSBC_DEPOSIT>
+			<code>HSBC_DEPOSIT</code>
+			<name>HSBC Deposit</name>
+			<order>0</order>
+		    </HSBC_DEPOSIT>
+		    <HSBC_SLIP>
+			<code>HSBC_SLIP</code>
+			<name>HSBC Slip</name>
+			<order>1</order>
+		    </HSBC_SLIP>
+		    <REAL_DEPOSIT>
+			<code>REAL_DEPOSIT</code>
+			<name>Real Deposit</name>
+			<order>0</order>
+		    </REAL_DEPOSIT>
+		    <REAL_SLIP>
+			<code>REAL_SLIP</code>
+			<name>Real Slip</name>
+			<order>1</order>
+		    </REAL_SLIP>
+		    <NOSSACAIXA_DEPOSIT>
+			<code>NOSSACAIXA_DEPOSIT</code>
+			<name>Nossa Caixa Deposit</name>
+			<order>0</order>
+		    </NOSSACAIXA_DEPOSIT>
+		    <NOSSACAIXA_SLIP>
+			<code>NOSSACAIXA_SLIP</code>
+			<name>Nossa Caixa Slip</name>
+			<order>1</order>
+		    </NOSSACAIXA_SLIP>
+		</types>
+	    </slips>
+	</payment>
+        <events>
+            <sales_order_invoice_register>
+                <observers>
+                    <gamuza_slips_observer_invoice_register>
+                        <type>singleton</type>
+                        <class>slips/observer_invoice</class>
+                        <method>capture</method>
+                    </gamuza_slips_observer_invoice_register>
+                </observers>
+            </sales_order_invoice_register>
+        </events>
+  </global>
+  <admin>
+	<routers>
+	  <slips>
+	    <use>admin</use>
+		<args>
+		  <module>Gamuza_Slips</module>
+		  <frontName>slips</frontName>
+		</args>
+	  </slips>
+	</routers>
+  </admin>
+    <frontend>
+	  <routers>
+	    <slips>
+		<use>standard</use>
+		<args>
+		    <module>Gamuza_Slips</module>
+		    <frontname>slips</frontname>
+		</args>
+	  </slips>
+	</routers>
+        <layout>
+            <updates>
+            <slips>
+                <file>slips.xml</file>
+            </slips>
+        </updates>
+        </layout>
+        <translate>
+           <modules>
+              <Gamuza_Slips>
+                 <files>
+                    <default>Gamuza_Slips.csv</default>
+                 </files>
+              </Gamuza_Slips>
+           </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <translate>
+           <modules>
+              <Gamuza_Slips>
+                 <files>
+                    <default>Gamuza_Slips.csv</default>
+                 </files>
+              </Gamuza_Slips>
+           </modules>
+        </translate>
+        <layout>
+            <updates>
+            <slips>
+                <file>slips.xml</file>
+            </slips>
+        </updates>
+        </layout>
+    </adminhtml>
+    <default>
+     <payment>
+      <slips_standard>
+         <active>1</active>
+         <title>Slips and Desposits</title>
+         <order_status>pending_payment</order_status>
+         <cctypes>
+         BRADESCO_DEPOSIT,BRADESCO_SLIP,SANTANDER_DEPOSIT,SANTANDER_SLIP,
+         BB_DEPOSIT,BB_SLIP,UNIBANCO_DEPOSIT,UNIBANCO_SLIP,
+         CEF_DEPOSIT,CEF_SLIP,HSBC_DEPOSIT,HSBC_SLIP
+		 REAL_DEPOSIT,REAL_SLIP,NOSSACAIXA_DEPOSIT,NOSSACAIXA_SLIP
+         </cctypes>
+         <model>slips/standard</model>
+         <payment_action>authorize</payment_action>
+     </slips_standard>
+	<bradesco_slip_settings>
+		<submit_url>http://slips.gamuza.com.br/bradesco.php</submit_url>
+	</bradesco_slip_settings>
+	<santander_slip_settings>
+		<submit_url>http://slips.gamuza.com.br/santander.php</submit_url>
+	</santander_slip_settings>
+	<bb_slip_settings>
+		<submit_url>http://slips.gamuza.com.br/bb.php</submit_url>
+	</bb_slip_settings>
+	<unibanco_slip_settings>
+		<submit_url>http://slips.gamuza.com.br/unibanco.php</submit_url>
+	</unibanco_slip_settings>
+	<cef_slip_settings>
+		<submit_url>http://slips.gamuza.com.br/cef.php</submit_url>
+	</cef_slip_settings>
+	<hsbc_slip_settings>
+		<submit_url>http://slips.gamuza.com.br/hsbc.php</submit_url>
+	</hsbc_slip_settings>
+	<real_slip_settings>
+		<submit_url>http://slips.gamuza.com.br/real.php</submit_url>
+	</real_slip_settings>
+	<nossacaixa_slip_settings>
+		<submit_url>http://slips.gamuza.com.br/nossacaixa.php</submit_url>
+	</nossacaixa_slip_settings>
+    </payment>
+   </default>
+</config> 
