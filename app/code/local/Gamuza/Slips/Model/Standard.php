@@ -1,7 +1,7 @@
 <?php
 /*
  * Gamuza Slips - Slips and Deposits for Magento platform.
- * Copyright (C) 2013 Gamuza Technologies (http://www.gamuza.com.br/)
+ * Copyright (c) 2010 - 2014 Gamuza Technologies (http://www.gamuza.com.br/)
  * Author: Eneias Ramos de Melo <eneias@gamuza.com.br>
  *
  * This library is free software; you can redistribute it and/or
@@ -23,7 +23,7 @@
 /*
  * See the AUTHORS file for a list of people on the Gamuza Team.
  * See the ChangeLog files for a list of changes.
- * These files are distributed with Gamuza_Slips at http://code.google.com/p/gamuzaopen/.
+ * These files are distributed with Gamuza_Slips at http://github.com/gamuzabrasil/.
  */
 
 class Gamuza_Slips_Model_Standard
@@ -32,7 +32,8 @@ extends Mage_Payment_Model_Method_Abstract
 
 protected $_code = 'slips_standard';
 
-protected $_canAuthorize            = true;
+protected $_canOrder                = true;
+protected $_canAuthorize            = false;
 protected $_canCapture              = true;
 
 protected $_formBlockType = 'slips/standard_form';
@@ -67,7 +68,7 @@ public function _getStoreConfig ($key, $field)
     return Mage::getStoreConfig ("payment/{$_key}_settings/$field");
 }
 
-public function authorize (Varien_Object $payment, $amount)
+public function order (Varien_Object $payment, $amount)
 {
     $order = $payment->getOrder ();
     $order_id = $order->getId ();
@@ -76,12 +77,23 @@ public function authorize (Varien_Object $payment, $amount)
     
     $ccType = $payment->getCcType ();
     
+    // reorder
+    $reorder_increment_id = explode ('-', $order_increment_id); // reorder
+    $order_increment_id = $reorder_increment_id [0];
+    $order_suffix_id = @$reorder_increment_id [1];
+    
     $expiration = strtotime ('+' . $this->_getStoreConfig ($ccType, 'expiration') . 'days');
     $transaction_expiration = date ('Y-m-d', $expiration);
     $increment = $this->_getStoreConfig ('slips', 'order_id_increment');
     
     $order_increment_prefix = $this->_getOrderIncrementPrefix ($store_id);
-    $number = ($order_increment_id - $order_increment_prefix) + $increment;
+    $number = ($order_increment_id - $order_increment_prefix);
+    if (!empty ($order_suffix_id))
+    {
+        $number *= pow (10, strlen ($order_suffix_id));
+        $number += $order_suffix_id;
+    }
+    $number += $increment;
     
     $data = array ('order_id' => $order_id, 'amount' => $amount, 'expiration' => $transaction_expiration, 'number' => $number);
     $result = Mage::getModel ('utils/sql')->insert ('gamuza_slips_transactions', $data);
@@ -99,3 +111,4 @@ public function authorize (Varien_Object $payment, $amount)
 }
 
 }
+

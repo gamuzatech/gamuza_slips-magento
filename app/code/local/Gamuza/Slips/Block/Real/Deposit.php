@@ -1,7 +1,7 @@
 <?php
 /*
  * Gamuza Slips - Slips and Deposits for Magento platform.
- * Copyright (C) 2013 Gamuza Technologies (http://www.gamuza.com.br/)
+ * Copyright (c) 2010 - 2014 Gamuza Technologies (http://www.gamuza.com.br/)
  * Author: Eneias Ramos de Melo <eneias@gamuza.com.br>
  *
  * This library is free software; you can redistribute it and/or
@@ -23,21 +23,18 @@
 /*
  * See the AUTHORS file for a list of people on the Gamuza Team.
  * See the ChangeLog files for a list of changes.
- * These files are distributed with Gamuza_Slips at http://code.google.com/p/gamuzaopen/.
+ * These files are distributed with Gamuza_Slips at http://github.com/gamuzabrasil/.
  */
 
 class Gamuza_Slips_Block_Real_Deposit
-extends Mage_Core_Block_Template
+extends Gamuza_Slips_Block_Standard_Abstract
+// extends Mage_Core_Block_Template
 {
-	public function getPaymentInfoHtml ($key, $field)
-	{
-		$_key = strtolower ($key);
-		
-		return Mage::getStoreConfig ("payment/{$_key}_settings/{$field}");
-	}
 
-	public function _construct ()
-	{
-		$this->setTemplate ('slips/real/deposit.phtml');
-	}
+public function _construct ()
+{
+	$this->setTemplate ('gamuza/slips/real/deposit.phtml');
 }
+
+}
+

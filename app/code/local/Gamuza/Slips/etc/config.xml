@@ -2,7 +2,7 @@
 <!--
 /*
  * Gamuza Slips - Slips and Deposits for Magento platform.
- * Copyright (C) 2013 Gamuza Technologies (http://www.gamuza.com.br/)
+ * Copyright (c) 2010 - 2014 Gamuza Technologies (http://www.gamuza.com.br/)
  * Author: Eneias Ramos de Melo <eneias@gamuza.com.br>
  *
  * This library is free software; you can redistribute it and/or
@@ -24,7 +24,7 @@
 /*
  * See the AUTHORS file for a list of people on the Gamuza Team.
  * See the ChangeLog files for a list of changes.
- * These files are distributed with Gamuza_Slips at http://code.google.com/p/gamuzaopen/.
+ * These files are distributed with Gamuza_Slips at http://github.com/gamuzabrasil/.
  */
 -->
 
@@ -201,7 +201,7 @@
         <layout>
             <updates>
             <slips>
-                <file>slips.xml</file>
+                <file>gamuza/slips.xml</file>
             </slips>
         </updates>
         </layout>
@@ -228,7 +228,7 @@
         <layout>
             <updates>
             <slips>
-                <file>slips.xml</file>
+                <file>gamuza/slips.xml</file>
             </slips>
         </updates>
         </layout>
@@ -246,8 +246,9 @@
 		 REAL_DEPOSIT,REAL_SLIP,NOSSACAIXA_DEPOSIT,NOSSACAIXA_SLIP
          </cctypes>
          <model>slips/standard</model>
-         <payment_action>authorize</payment_action>
+         <payment_action>order</payment_action>
      </slips_standard>
+     <!--
 	<bradesco_slip_settings>
 		<submit_url>http://slips.gamuza.com.br/bradesco.php</submit_url>
 	</bradesco_slip_settings>
@@ -272,6 +273,8 @@
 	<nossacaixa_slip_settings>
 		<submit_url>http://slips.gamuza.com.br/nossacaixa.php</submit_url>
 	</nossacaixa_slip_settings>
+	-->
     </payment>
    </default>
-</config> 
+</config>
+

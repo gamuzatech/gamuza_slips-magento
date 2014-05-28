@@ -2,7 +2,7 @@
 <!--
 /*
  * Gamuza Slips - Slips and Deposits for Magento platform.
- * Copyright (C) 2013 Gamuza Technologies (http://www.gamuza.com.br/)
+ * Copyright (c) 2010 - 2014 Gamuza Technologies (http://www.gamuza.com.br/)
  * Author: Eneias Ramos de Melo <eneias@gamuza.com.br>
  *
  * This library is free software; you can redistribute it and/or
@@ -24,7 +24,7 @@
 /*
  * See the AUTHORS file for a list of people on the Gamuza Team.
  * See the ChangeLog files for a list of changes.
- * These files are distributed with Gamuza_Slips at http://code.google.com/p/gamuzaopen/.
+ * These files are distributed with Gamuza_Slips at http://github.com/gamuzabrasil/.
  */
 -->
 
@@ -43,7 +43,7 @@
 		        <slips_standard translate="label" module="slips">
 		            <label>Slips and Deposits</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2000</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -116,7 +116,7 @@
 				<slips_settings>
 		            <label>Slips and Deposits - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2010</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -131,362 +131,10 @@
 						</order_id_increment>
 					</fields>
 				</slips_settings>
-				<bradesco_deposit_settings>
-		            <label>Bradesco Deposit - Settings</label>
-					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
-				    <show_in_default>1</show_in_default>
-			      	<show_in_website>1</show_in_website>
-			      	<show_in_store>1</show_in_store>
-				    <fields>
-						<information translate="label">
-							<label>Information</label>
-							<frontend_type>textarea</frontend_type>
-							<sort_order>0</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</information>
-					</fields>
-				</bradesco_deposit_settings>
-				<bradesco_slip_settings>
-		            <label>Bradesco Slip - Settings</label>
-					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
-				    <show_in_default>1</show_in_default>
-			      	<show_in_website>1</show_in_website>
-			      	<show_in_store>1</show_in_store>
-				    <fields>
-						<expiration translate="label">
-							<label>Expiration</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>0</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</expiration>
-						<tax translate="label">
-							<label>Tax</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>1</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</tax>
-						<demonstrative1 translate="label">
-							<label>Demonstrative 1</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>2</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</demonstrative1>
-						<demonstrative2 translate="label">
-							<label>Demonstrative 2</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>3</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</demonstrative2>
-						<demonstrative3 translate="label">
-							<label>Demonstrative 3</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>4</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</demonstrative3>
-						<instructions1 translate="label">
-							<label>Instructions 1</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>5</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions1>
-						<instructions2 translate="label">
-							<label>Instructions 2</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>6</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions2>
-						<instructions3 translate="label">
-							<label>Instructions 3</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>7</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions3>
-						<instructions4 translate="label">
-							<label>Instructions 4</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>8</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions4>
-						<acceptance translate="label">
-							<label>Acceptance</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>9</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</acceptance>
-						<specie translate="label">
-							<label>Specie</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>10</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</specie>
-						<specie_doc translate="label">
-							<label>Specie Doc.</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>11</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</specie_doc>
-						<agency translate="label">
-							<label>Agency</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>12</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</agency>
-						<agency_dv translate="label">
-							<label>Agency DV</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>13</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</agency_dv>
-						<account translate="label">
-							<label>Account</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>14</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</account>
-						<account_dv translate="label">
-							<label>Account DV</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>15</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</account_dv>
-						<transferor_account translate="label">
-							<label>Transferor Account</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>16</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</transferor_account>
-						<transferor_account_dv translate="label">
-							<label>Transferor Account DV</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>17</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</transferor_account_dv>
-						<portfolio translate="label">
-							<label>Portfolio</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>18</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</portfolio>
-						<submit_url translate="label">
-							<label>Submit URL</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>19</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</submit_url>
-					</fields>
-				</bradesco_slip_settings>
-				<santander_deposit_settings>
-		            <label>Santander Deposit - Settings</label>
-					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
-				    <show_in_default>1</show_in_default>
-			      	<show_in_website>1</show_in_website>
-			      	<show_in_store>1</show_in_store>
-				    <fields>
-						<information translate="label">
-							<label>Information</label>
-							<frontend_type>textarea</frontend_type>
-							<sort_order>0</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</information>
-					</fields>
-				</santander_deposit_settings>
-				<santander_slip_settings>
-		            <label>Santander Slip - Settings</label>
-					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
-				    <show_in_default>1</show_in_default>
-			      	<show_in_website>1</show_in_website>
-			      	<show_in_store>1</show_in_store>
-				    <fields>
-						<expiration translate="label">
-							<label>Expiration</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>0</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</expiration>
-						<tax translate="label">
-							<label>Tax</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>1</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</tax>
-						<demonstrative1 translate="label">
-							<label>Demonstrative 1</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>2</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</demonstrative1>
-						<demonstrative2 translate="label">
-							<label>Demonstrative 2</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>3</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</demonstrative2>
-						<demonstrative3 translate="label">
-							<label>Demonstrative 3</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>4</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</demonstrative3>
-						<instructions1 translate="label">
-							<label>Instructions 1</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>5</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions1>
-						<instructions2 translate="label">
-							<label>Instructions 2</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>6</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions2>
-						<instructions3 translate="label">
-							<label>Instructions 3</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>7</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions3>
-						<instructions4 translate="label">
-							<label>Instructions 4</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>8</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions4>
-						<acceptance translate="label">
-							<label>Acceptance</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>9</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</acceptance>
-						<specie translate="label">
-							<label>Specie</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>10</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</specie>
-						<specie_doc translate="label">
-							<label>Specie Doc.</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>11</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</specie_doc>
-						<client_code translate="label">
-							<label>Client Code</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>12</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</client_code>
-						<outlet translate="label">
-							<label>Outlet</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>13</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</outlet>
-						<portfolio translate="label">
-							<label>Portfolio</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>14</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</portfolio>
-						<portfolio_description translate="label">
-							<label>Portfolio Description</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>15</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</portfolio_description>
-						<submit_url translate="label">
-							<label>Submit URL</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>16</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</submit_url>
-					</fields>
-				</santander_slip_settings>
 				<bb_deposit_settings>
 		            <label>Banco do Brasil Deposit - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2020</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -504,7 +152,7 @@
 				<bb_slip_settings>
 		            <label>Banco do Brasil Slip - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2030</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -669,6 +317,7 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</number_formation>
+                        <!--
 						<submit_url translate="label">
 							<label>Submit URL</label>
 							<frontend_type>text</frontend_type>
@@ -677,12 +326,13 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</submit_url>
+                        -->
 					</fields>
 				</bb_slip_settings>
-				<unibanco_deposit_settings>
-		            <label>Unibanco Deposit - Settings</label>
+				<bradesco_deposit_settings>
+		            <label>Bradesco Deposit - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2040</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -696,11 +346,11 @@
 							<show_in_store>1</show_in_store>
 						</information>
 					</fields>
-				</unibanco_deposit_settings>
-				<unibanco_slip_settings>
-		            <label>Unibanco Slip - Settings</label>
+				</bradesco_deposit_settings>
+				<bradesco_slip_settings>
+		            <label>Bradesco Slip - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2050</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -809,10 +459,18 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</agency>
+						<agency_dv translate="label">
+							<label>Agency DV</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</agency_dv>
 						<account translate="label">
 							<label>Account</label>
 							<frontend_type>text</frontend_type>
-							<sort_order>13</sort_order>
+							<sort_order>14</sort_order>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
@@ -820,41 +478,51 @@
 						<account_dv translate="label">
 							<label>Account DV</label>
 							<frontend_type>text</frontend_type>
-							<sort_order>13</sort_order>
+							<sort_order>15</sort_order>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</account_dv>
-						<client_code translate="label">
-							<label>Client Code</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>14</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</client_code>
-						<portfolio translate="label">
-							<label>Portfolio</label>
+						<transferor_account translate="label">
+							<label>Transferor Account</label>
 							<frontend_type>text</frontend_type>
 							<sort_order>16</sort_order>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
+						</transferor_account>
+						<transferor_account_dv translate="label">
+							<label>Transferor Account DV</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>17</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</transferor_account_dv>
+						<portfolio translate="label">
+							<label>Portfolio</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>18</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
 						</portfolio>
+                        <!--
 						<submit_url translate="label">
 							<label>Submit URL</label>
 							<frontend_type>text</frontend_type>
-							<sort_order>20</sort_order>
+							<sort_order>19</sort_order>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</submit_url>
+                        -->
 					</fields>
-				</unibanco_slip_settings>
+				</bradesco_slip_settings>
 				<cef_deposit_settings>
 		            <label>CEF Deposit - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2060</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -872,7 +540,7 @@
 				<cef_slip_settings>
 		            <label>CEF Slip - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2070</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -1029,6 +697,7 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</portfolio>
+                        <!--
 						<submit_url translate="label">
 							<label>Submit URL</label>
 							<frontend_type>text</frontend_type>
@@ -1037,12 +706,13 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</submit_url>
+                        -->
 					</fields>
 				</cef_slip_settings>
 				<hsbc_deposit_settings>
 		            <label>HSBC Deposit - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2080</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -1060,7 +730,7 @@
 				<hsbc_slip_settings>
 		            <label>HSBC Slip - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2090</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -1177,6 +847,7 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</portfolio>
+                        <!--
 						<submit_url translate="label">
 							<label>Submit URL</label>
 							<frontend_type>text</frontend_type>
@@ -1185,168 +856,13 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</submit_url>
+                        -->
 					</fields>
 				</hsbc_slip_settings>
-				<real_deposit_settings>
-		            <label>Real Deposit - Settings</label>
-					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
-				    <show_in_default>1</show_in_default>
-			      	<show_in_website>1</show_in_website>
-			      	<show_in_store>1</show_in_store>
-				    <fields>
-						<information translate="label">
-							<label>Information</label>
-							<frontend_type>textarea</frontend_type>
-							<sort_order>0</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</information>
-					</fields>
-				</real_deposit_settings>
-				<real_slip_settings>
-		            <label>Real Slip - Settings</label>
-					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
-				    <show_in_default>1</show_in_default>
-			      	<show_in_website>1</show_in_website>
-			      	<show_in_store>1</show_in_store>
-				    <fields>
-						<expiration translate="label">
-							<label>Expiration</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>0</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</expiration>
-						<tax translate="label">
-							<label>Tax</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>1</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</tax>
-						<demonstrative1 translate="label">
-							<label>Demonstrative 1</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>2</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</demonstrative1>
-						<demonstrative2 translate="label">
-							<label>Demonstrative 2</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>3</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</demonstrative2>
-						<demonstrative3 translate="label">
-							<label>Demonstrative 3</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>4</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</demonstrative3>
-						<instructions1 translate="label">
-							<label>Instructions 1</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>5</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions1>
-						<instructions2 translate="label">
-							<label>Instructions 2</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>6</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions2>
-						<instructions3 translate="label">
-							<label>Instructions 3</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>7</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions3>
-						<instructions4 translate="label">
-							<label>Instructions 4</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>8</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</instructions4>
-						<acceptance translate="label">
-							<label>Acceptance</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>9</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</acceptance>
-						<specie translate="label">
-							<label>Specie</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>10</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</specie>
-						<specie_doc translate="label">
-							<label>Specie Doc.</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>11</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</specie_doc>
-						<agency translate="label">
-							<label>Agency</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>12</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</agency>
-						<account translate="label">
-							<label>Account</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>16</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</account>
-						<portfolio translate="label">
-							<label>Portfolio</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>16</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</portfolio>
-						<submit_url translate="label">
-							<label>Submit URL</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>20</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>1</show_in_website>
-							<show_in_store>1</show_in_store>
-						</submit_url>
-					</fields>
-				</real_slip_settings>
 				<nossacaixa_deposit_settings>
 		            <label>Nossa Caixa Deposit - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2100</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -1364,7 +880,7 @@
 				<nossacaixa_slip_settings>
 		            <label>Nossa Caixa Slip - Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>0</sort_order>
+					<sort_order>2110</sort_order>
 				    <show_in_default>1</show_in_default>
 			      	<show_in_website>1</show_in_website>
 			      	<show_in_store>1</show_in_store>
@@ -1505,6 +1021,7 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</modality_account>
+                        <!--
 						<submit_url translate="label">
 							<label>Submit URL</label>
 							<frontend_type>text</frontend_type>
@@ -1513,9 +1030,509 @@
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
 						</submit_url>
+                        -->
 					</fields>
 				</nossacaixa_slip_settings>
+				<real_deposit_settings>
+		            <label>Real Deposit - Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2120</sort_order>
+				    <show_in_default>1</show_in_default>
+			      	<show_in_website>1</show_in_website>
+			      	<show_in_store>1</show_in_store>
+				    <fields>
+						<information translate="label">
+							<label>Information</label>
+							<frontend_type>textarea</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</information>
+					</fields>
+				</real_deposit_settings>
+				<real_slip_settings>
+		            <label>Real Slip - Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2130</sort_order>
+				    <show_in_default>1</show_in_default>
+			      	<show_in_website>1</show_in_website>
+			      	<show_in_store>1</show_in_store>
+				    <fields>
+						<expiration translate="label">
+							<label>Expiration</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</expiration>
+						<tax translate="label">
+							<label>Tax</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</tax>
+						<demonstrative1 translate="label">
+							<label>Demonstrative 1</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</demonstrative1>
+						<demonstrative2 translate="label">
+							<label>Demonstrative 2</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</demonstrative2>
+						<demonstrative3 translate="label">
+							<label>Demonstrative 3</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</demonstrative3>
+						<instructions1 translate="label">
+							<label>Instructions 1</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions1>
+						<instructions2 translate="label">
+							<label>Instructions 2</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions2>
+						<instructions3 translate="label">
+							<label>Instructions 3</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions3>
+						<instructions4 translate="label">
+							<label>Instructions 4</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions4>
+						<acceptance translate="label">
+							<label>Acceptance</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</acceptance>
+						<specie translate="label">
+							<label>Specie</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</specie>
+						<specie_doc translate="label">
+							<label>Specie Doc.</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</specie_doc>
+						<agency translate="label">
+							<label>Agency</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>12</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</agency>
+						<account translate="label">
+							<label>Account</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>16</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</account>
+						<portfolio translate="label">
+							<label>Portfolio</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>16</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</portfolio>
+                        <!--
+						<submit_url translate="label">
+							<label>Submit URL</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</submit_url>
+                        -->
+					</fields>
+				</real_slip_settings>
+				<santander_deposit_settings>
+		            <label>Santander Deposit - Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2140</sort_order>
+				    <show_in_default>1</show_in_default>
+			      	<show_in_website>1</show_in_website>
+			      	<show_in_store>1</show_in_store>
+				    <fields>
+						<information translate="label">
+							<label>Information</label>
+							<frontend_type>textarea</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</information>
+					</fields>
+				</santander_deposit_settings>
+				<santander_slip_settings>
+		            <label>Santander Slip - Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2150</sort_order>
+				    <show_in_default>1</show_in_default>
+			      	<show_in_website>1</show_in_website>
+			      	<show_in_store>1</show_in_store>
+				    <fields>
+						<expiration translate="label">
+							<label>Expiration</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</expiration>
+						<tax translate="label">
+							<label>Tax</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</tax>
+						<demonstrative1 translate="label">
+							<label>Demonstrative 1</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</demonstrative1>
+						<demonstrative2 translate="label">
+							<label>Demonstrative 2</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</demonstrative2>
+						<demonstrative3 translate="label">
+							<label>Demonstrative 3</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</demonstrative3>
+						<instructions1 translate="label">
+							<label>Instructions 1</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions1>
+						<instructions2 translate="label">
+							<label>Instructions 2</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions2>
+						<instructions3 translate="label">
+							<label>Instructions 3</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions3>
+						<instructions4 translate="label">
+							<label>Instructions 4</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions4>
+						<acceptance translate="label">
+							<label>Acceptance</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</acceptance>
+						<specie translate="label">
+							<label>Specie</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</specie>
+						<specie_doc translate="label">
+							<label>Specie Doc.</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</specie_doc>
+						<client_code translate="label">
+							<label>Client Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>12</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</client_code>
+						<outlet translate="label">
+							<label>Outlet</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</outlet>
+						<portfolio translate="label">
+							<label>Portfolio</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>14</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</portfolio>
+						<portfolio_description translate="label">
+							<label>Portfolio Description</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</portfolio_description>
+                        <!--
+						<submit_url translate="label">
+							<label>Submit URL</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>16</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</submit_url>
+                        -->
+					</fields>
+				</santander_slip_settings>
+				<unibanco_deposit_settings>
+		            <label>Unibanco Deposit - Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2160</sort_order>
+				    <show_in_default>1</show_in_default>
+			      	<show_in_website>1</show_in_website>
+			      	<show_in_store>1</show_in_store>
+				    <fields>
+						<information translate="label">
+							<label>Information</label>
+							<frontend_type>textarea</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</information>
+					</fields>
+				</unibanco_deposit_settings>
+				<unibanco_slip_settings>
+		            <label>Unibanco Slip - Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2170</sort_order>
+				    <show_in_default>1</show_in_default>
+			      	<show_in_website>1</show_in_website>
+			      	<show_in_store>1</show_in_store>
+				    <fields>
+						<expiration translate="label">
+							<label>Expiration</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</expiration>
+						<tax translate="label">
+							<label>Tax</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</tax>
+						<demonstrative1 translate="label">
+							<label>Demonstrative 1</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</demonstrative1>
+						<demonstrative2 translate="label">
+							<label>Demonstrative 2</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</demonstrative2>
+						<demonstrative3 translate="label">
+							<label>Demonstrative 3</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</demonstrative3>
+						<instructions1 translate="label">
+							<label>Instructions 1</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions1>
+						<instructions2 translate="label">
+							<label>Instructions 2</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions2>
+						<instructions3 translate="label">
+							<label>Instructions 3</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions3>
+						<instructions4 translate="label">
+							<label>Instructions 4</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instructions4>
+						<acceptance translate="label">
+							<label>Acceptance</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</acceptance>
+						<specie translate="label">
+							<label>Specie</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</specie>
+						<specie_doc translate="label">
+							<label>Specie Doc.</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</specie_doc>
+						<agency translate="label">
+							<label>Agency</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>12</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</agency>
+						<account translate="label">
+							<label>Account</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</account>
+						<account_dv translate="label">
+							<label>Account DV</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</account_dv>
+						<client_code translate="label">
+							<label>Client Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>14</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</client_code>
+						<portfolio translate="label">
+							<label>Portfolio</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>16</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</portfolio>
+                        <!--
+						<submit_url translate="label">
+							<label>Submit URL</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</submit_url>
+                        -->
+					</fields>
+				</unibanco_slip_settings>
             </groups>
         </payment>
     </sections>
 </config>
+

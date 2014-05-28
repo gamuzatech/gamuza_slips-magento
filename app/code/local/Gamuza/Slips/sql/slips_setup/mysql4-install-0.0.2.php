@@ -1,7 +1,7 @@
 <?php
 /*
  * Gamuza Slips - Slips and Deposits for Magento platform.
- * Copyright (C) 2013 Gamuza Technologies (http://www.gamuza.com.br/)
+ * Copyright (c) 2010 - 2014 Gamuza Technologies (http://www.gamuza.com.br/)
  * Author: Eneias Ramos de Melo <eneias@gamuza.com.br>
  *
  * This library is free software; you can redistribute it and/or
@@ -23,13 +23,15 @@
 /*
  * See the AUTHORS file for a list of people on the Gamuza Team.
  * See the ChangeLog files for a list of changes.
- * These files are distributed with Gamuza_Slips at http://code.google.com/p/gamuzaopen/.
+ * These files are distributed with Gamuza_Slips at http://github.com/gamuzabrasil/.
  */
 
 $installer = $this;
 $installer->startSetup();
-$sqlBlock = <<<SQLBLOCK
-CREATE TABLE gamuza_slips_transactions (
+
+$sqlBlock = <<< SQLBLOCK
+CREATE TABLE {$this->getTable ('gamuza_slips_transactions')}
+(
     id int(11) unsigned NOT NULL AUTO_INCREMENT,
     order_id int(11) unsigned NOT NULL,
     amount float unsigned NOT NULL,
@@ -42,8 +44,12 @@ CREATE TABLE gamuza_slips_transactions (
     KEY expiration (expiration)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 SQLBLOCK;
+
 $installer->run($sqlBlock);
+
 //demo
 //Mage::getModel('core/url_rewrite')->setId(null);
 //demo
+
 $installer->endSetup();
+
