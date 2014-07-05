@@ -39,11 +39,6 @@ protected $_canCapture              = true;
 protected $_formBlockType = 'slips/standard_form';
 protected $_infoBlockType = 'slips/standard_info';
 
-public function _getOrderPlaceRedirectUrl ()
-{
-    return Mage::getUrl ('slips/standard/redirect', array ('_secure' => true));
-}
-
 public function _getOrderIncrementPrefix ($order_store_id)
 {
     $order_entity_type = Mage::getModel('eav/entity_type')->loadByCode ('order');
