@@ -60,7 +60,13 @@ protected function _prepareSpecificInformation($transport = null)
 
 public function getOrder()
 {
-    return Mage::registry('current_order');
+    $order = Mage::registry('current_order');
+    if (empty ($order))
+    {
+        $order_id = $this->getInfo()->getLastTransId ();
+        $order = Mage::getModel ('sales/order')->load($order_id);
+    }
+    return $order;
 }
 
 public function _getStoreConfig ($field)
@@ -76,9 +82,10 @@ public function getPaymentInfoHtml ()
 
 	if ($this->getOrder () == NULL) return;
 
-	$ccType = strtolower ($this->getInfo ()->getCcType ());
+	$info = $this->getInfo ();
+	$ccType = strtolower ($info->getCcType ());
 
-	return Mage::app()->getLayout ()->createBlock ("slips/$ccType")->setCcType ($ccType)->toHtml ();
+	return Mage::app()->getLayout ()->createBlock ("slips/$ccType")->setInfo ($info)->setCcType ($ccType)->toHtml ();
 }
 
 }

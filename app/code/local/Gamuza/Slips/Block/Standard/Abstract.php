@@ -37,7 +37,13 @@ public function _getStoreConfig ($field)
 
 public function getOrder()
 {
-    return Mage::registry('current_order');
+    $order = Mage::registry('current_order');
+    if (empty ($order))
+    {
+        $order_id = $this->getInfo()->getLastTransId ();
+        $order = Mage::getModel ('sales/order')->load($order_id);
+    }
+    return $order;
 }
     
 
