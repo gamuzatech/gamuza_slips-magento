@@ -30,7 +30,7 @@ $installer = $this;
 $installer->startSetup();
 
 $sqlBlock = <<< SQLBLOCK
-CREATE TABLE {$this->getTable ('gamuza_slips_transactions')}
+CREATE TABLE IF NOT EXISTS {$this->getTable ('gamuza_slips_transactions')}
 (
     id int(11) unsigned NOT NULL AUTO_INCREMENT,
     order_id int(11) unsigned NOT NULL,
