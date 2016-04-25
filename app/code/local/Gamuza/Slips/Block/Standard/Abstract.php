@@ -30,9 +30,9 @@ class Gamuza_Slips_Block_Standard_Abstract
 extends Mage_Core_Block_Template
 {
 
-public function _getStoreConfig ($field)
+public function _getStoreConfig ($ccType, $field)
 {
-    return Mage::getStoreConfig ("payment/slips_settings/{$field}");
+    return Mage::getStoreConfig ("payment/{$ccType}_settings/{$field}");
 }
 
 public function getOrder()
