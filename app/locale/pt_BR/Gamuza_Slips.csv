@@ -41,6 +41,8 @@
 "Portfolio Variation","Variação da Carteira"
 "Agreement Formation","Formatação do Convênio"
 "Number Formation","Formatação do Nosso Número"
+"Itau Slip - Settings","Boleto Itaú - Ajustes"
+"Itau Deposit - Settings","Depósito Itaú - Ajustes"
 "Unibanco Slip - Settings","Boleto Unibanco - Ajustes"
 "Unibanco Deposit - Settings","Depósito Unibanco - Ajustes"
 "CEF Deposit - Settings","Depósito C.E.F. - Ajustes"
@@ -55,6 +57,8 @@
 "Real Deposit - Settings","Depósito Real - Ajustes"
 "Banco do Brasil Deposit","Depósito Banco do Brasil"
 "Banco do Brasil Slip","Boleto Banco do Brasil"
+"Itau Deposit","Depósito Itaú"
+"Itau Slip","Boleto Itaú"
 "Unibanco Deposit","Depósito Unibanco"
 "Unibanco Slip","Boleto Unibanco"
 "CEF Deposit","Depósito C.E.F."
@@ -72,3 +76,5 @@
 "Order ID Increment","Incremento para o Número do Pedido"
 "Submit this transaction","Efetuar o pagamento"
 "View Item '%s'","Visualizar Item '%s'"
+"Company Logo","Logotipo da Empresa"
+

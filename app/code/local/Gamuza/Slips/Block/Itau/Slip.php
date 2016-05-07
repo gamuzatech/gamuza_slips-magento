@@ -1,7 +1,7 @@
 <?php
 /*
  * Gamuza Slips - Slips and Deposits for Magento platform.
- * Copyright (c) 2010 - 2014 Gamuza Technologies (http://www.gamuza.com.br/)
+ * Copyright (c) 2016 Gamuza Technologies (http://www.gamuza.com.br/)
  * Author: Eneias Ramos de Melo <eneias@gamuza.com.br>
  *
  * This library is free software; you can redistribute it and/or
@@ -26,7 +26,7 @@
  * These files are distributed with Gamuza_Slips at http://github.com/gamuzabrasil/.
  */
 
-class Gamuza_Slips_Block_Nossacaixa_Slip
+class Gamuza_Slips_Block_Itau_Slip
 extends Gamuza_Slips_Block_Standard_Abstract
 // extends Mage_Core_Block_Template
 {
@@ -38,7 +38,7 @@ public function getPaymentInfoHtml ($ccType)
 	/*
 	 * Slip Settings.
 	 */
-	$fieldset = $form->addFieldset("nossacaixa_slip_fieldset", array ("legend" => null));
+	$fieldset = $form->addFieldset("itau_slip_fieldset", array ("legend" => null));
 	$fieldset->addField("tax", "hidden", array(
 	"name" => 'tax',
 	"value" => $this->_getStoreConfig ($ccType, 'tax'),
@@ -87,21 +87,21 @@ public function getPaymentInfoHtml ($ccType)
 	"name" => 'agency',
 	"value" => $this->_getStoreConfig ($ccType, 'agency'),
 	));
-	$fieldset->addField("transferor_account", "hidden", array(
-	"name" => 'transferor_account',
-	"value" => $this->_getStoreConfig ($ccType, 'transferor_account'),
+	$fieldset->addField("account", "hidden", array(
+	"name" => 'account',
+	"value" => $this->_getStoreConfig ($ccType, 'account'),
 	));
-	$fieldset->addField("transferor_account_dv", "hidden", array(
-	"name" => 'transferor_account_dv',
-	"value" => $this->_getStoreConfig ($ccType, 'transferor_account_dv'),
+	$fieldset->addField("account_dv", "hidden", array(
+	"name" => 'account_dv',
+	"value" => $this->_getStoreConfig ($ccType, 'account_dv'),
+	));
+	$fieldset->addField("client_code", "hidden", array(
+	"name" => 'client_code',
+	"value" => $this->_getStoreConfig ($ccType, 'client_code'),
 	));
 	$fieldset->addField("portfolio", "hidden", array(
 	"name" => 'portfolio',
 	"value" => $this->_getStoreConfig ($ccType, 'portfolio'),
-	));
-	$fieldset->addField("modality_account", "hidden", array(
-	"name" => 'modality_account',
-	"value" => $this->_getStoreConfig ($ccType, 'modality_account'),
 	));
 
 	/*
@@ -181,7 +181,7 @@ public function getPaymentInfoHtml ($ccType)
 
 public function _construct ()
 {
-	$this->setTemplate ('gamuza/slips/nossacaixa/slip.phtml');
+	$this->setTemplate ('gamuza/slips/itau/slip.phtml');
 }
 
 }

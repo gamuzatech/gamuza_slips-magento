@@ -63,10 +63,9 @@ do Sacado</b></div></TD></tr></tbody></table><table width=666 cellspacing=5 cell
   <tr>
 	<?php
 		$url_logo = $dadosboleto["endereco_logo_empresa"];
-		$url_logo = !empty ($url_logo) ? $url_logo : 'http://images.gamuza.com.br/gamuzaslips/gamuza-slips-logo-small.png';
 	?>
     <td width=41><IMG SRC="<?php echo $url_logo; ?>"></td>
-    <td class=ti width=455><?php echo $dadosboleto["identificacao"]; ?> <?php echo isset($dadosboleto["cpf_cnpj"]) ? $dadosboleto["cpf_cnpj"] : '' ?><br>
+    <td class=ti width=455><?php echo $dadosboleto["identificacao"]; ?> <?php echo isset($dadosboleto["cpf_cnpj"]) ? "<br>".$dadosboleto["cpf_cnpj"] : '' ?><br>
 	<?php echo $dadosboleto["endereco"]; ?><br>
 	<?php echo $dadosboleto["cidade_uf"]; ?><br>
     </td>

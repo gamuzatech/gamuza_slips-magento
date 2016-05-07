@@ -112,6 +112,16 @@
 			<name>Banco do Brasil Slip</name>
 			<order>1</order>
 		    </BB_SLIP>
+		    <ITAU_DEPOSIT>
+			<code>ITAU_DEPOSIT</code>
+			<name>Itau Deposit</name>
+			<order>0</order>
+		    </ITAU_DEPOSIT>
+		    <ITAU_SLIP>
+			<code>ITAU_SLIP</code>
+			<name>Itau Slip</name>
+			<order>1</order>
+		    </ITAU_SLIP>
 		    <UNIBANCO_DEPOSIT>
 			<code>UNIBANCO_DEPOSIT</code>
 			<name>Unibanco Deposit</name>
@@ -241,39 +251,13 @@
          <order_status>pending_payment</order_status>
          <cctypes>
          BRADESCO_DEPOSIT,BRADESCO_SLIP,SANTANDER_DEPOSIT,SANTANDER_SLIP,
-         BB_DEPOSIT,BB_SLIP,UNIBANCO_DEPOSIT,UNIBANCO_SLIP,
+         BB_DEPOSIT,BB_SLIP,ITAU_DEPOSIT,ITAU_SLIP,
          CEF_DEPOSIT,CEF_SLIP,HSBC_DEPOSIT,HSBC_SLIP
 		 REAL_DEPOSIT,REAL_SLIP,NOSSACAIXA_DEPOSIT,NOSSACAIXA_SLIP
          </cctypes>
          <model>slips/standard</model>
          <payment_action>order</payment_action>
      </slips_standard>
-     <!--
-	<bradesco_slip_settings>
-		<submit_url>http://slips.gamuza.com.br/bradesco.php</submit_url>
-	</bradesco_slip_settings>
-	<santander_slip_settings>
-		<submit_url>http://slips.gamuza.com.br/santander.php</submit_url>
-	</santander_slip_settings>
-	<bb_slip_settings>
-		<submit_url>http://slips.gamuza.com.br/bb.php</submit_url>
-	</bb_slip_settings>
-	<unibanco_slip_settings>
-		<submit_url>http://slips.gamuza.com.br/unibanco.php</submit_url>
-	</unibanco_slip_settings>
-	<cef_slip_settings>
-		<submit_url>http://slips.gamuza.com.br/cef.php</submit_url>
-	</cef_slip_settings>
-	<hsbc_slip_settings>
-		<submit_url>http://slips.gamuza.com.br/hsbc.php</submit_url>
-	</hsbc_slip_settings>
-	<real_slip_settings>
-		<submit_url>http://slips.gamuza.com.br/real.php</submit_url>
-	</real_slip_settings>
-	<nossacaixa_slip_settings>
-		<submit_url>http://slips.gamuza.com.br/nossacaixa.php</submit_url>
-	</nossacaixa_slip_settings>
-	-->
     </payment>
    </default>
 </config>

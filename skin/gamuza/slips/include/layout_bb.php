@@ -29,7 +29,6 @@
 
 <?php
 	$url_logo = $dadosboleto["endereco_logo_empresa"];
-	$url_logo = !empty ($url_logo) ? $url_logo : 'http://images.gamuza.com.br/gamuzaslips/gamuza-slips-logo-small.png';
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

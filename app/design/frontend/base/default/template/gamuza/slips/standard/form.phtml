@@ -35,7 +35,7 @@
 			<?php $_ccType = $this->getInfoData('cc_type') ?>
 			<div id="<?php echo $_code ?>_cc_type" style="display:inline-block;">
 		        <?php foreach ($this->getAvailableCcTypes() as $_typeCode => $_typeName): ?>
-				<div style="display:inline-block; text-align:center; margin:15px; width:150px; vertical-align:top;">
+				<div style="display:inline-block; text-align:center; _margin:15px; width:150px; vertical-align:top;">
 					<label for="<?php echo $_typeCode; ?>_cc_type">
 						<img src="<?php echo $this->getSkinUrl ("images/gamuza/slips/{$_typeCode}.png"); ?>" />
 					</label>

@@ -157,7 +157,7 @@ public function getPaymentInfoHtml ($ccType)
 	 */
 	$company_address = Mage::getStoreConfig ('general/store_information/address');
 	$company_name = Mage::getStoreConfig ('general/store_information/name');
-	$company_logo_url = Mage::getStoreConfig ('design/header/logo_src');
+	$company_logo_url = $this->_getCompanyLogoUrl ();
 	$fieldset->addField("company_address", "hidden", array(
 	"name" => 'company_address',
 	"value" => $company_address,
@@ -168,7 +168,7 @@ public function getPaymentInfoHtml ($ccType)
 	));
 	$fieldset->addField("company_logo_url", "hidden", array(
 	"name" => 'company_logo_url',
-	"value" => $this->getSkinUrl ($company_logo_url),
+	"value" => $company_logo_url,
 	));
 
 	$fieldset->addField("submit", "submit", array(

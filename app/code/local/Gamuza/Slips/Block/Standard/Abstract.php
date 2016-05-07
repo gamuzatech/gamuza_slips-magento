@@ -46,6 +46,13 @@ public function getOrder()
     return $order;
 }
     
+public function _getCompanyLogoUrl()
+{
+    $media_url = Mage::getBaseUrl (Mage_Core_Model_Store::URL_TYPE_MEDIA);
+    $value = Mage::getStoreConfig ('payment/slips_settings/company_logo');
+
+    return $media_url . 'gamuza/slips/' . $value;
+}
 
 public function getSlipUrl ($name)
 {
