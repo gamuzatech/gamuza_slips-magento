@@ -12,7 +12,7 @@ E o seu cliente tem um anti-popup, não se preocupe. Nós avisaremos os seus cli
 
 <h2>Instalação</h2>
 
-*Atenção! Sempre faça um backup antes de realizar qualquer modificação! Sempre utilize o módulo em ambiente de testes primeiro!"*
+<img src="https://dl.dropboxusercontent.com/s/pqpp0x62kqov683/sempre-faca-backup.png" alt="" title="Atenção! Sempre faça um backup da sua loja antes de realizar qualquer modificação!" />
 
 **Instalar usando o modgit:**
 
