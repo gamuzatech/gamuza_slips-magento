@@ -12,7 +12,7 @@ E o seu cliente tem um anti-popup, não se preocupe. Nós avisaremos os seus cli
 
 <h2>Instalação</h2>
 
-<img src="https://dl.dropboxusercontent.com/s/pqpp0x62kqov683/sempre-faca-backup.png" alt="" title="Atenção! Sempre faça um backup da sua loja antes de realizar qualquer modificação!" />
+<img src="https://dl.dropboxusercontent.com/s/pqpp0x62kqov683/sempre-faca-backup.png" alt="Atenção! Sempre faça um backup da sua loja antes de realizar qualquer modificação!" title="Atenção! Sempre faça um backup da sua loja antes de realizar qualquer modificação!" />
 
 **Instalar usando o modgit:**
 
@@ -24,7 +24,7 @@ E o seu cliente tem um anti-popup, não se preocupe. Nós avisaremos os seus cli
 
 Baixe a ultima versão aqui do pacote Gamuza_Slips-xxx.tbz2 e descompacte o arquivo baixado para dentro do diretório principal do Magento
 
-Limpe todos os caches em Sistema -> Gerenciamento de Cache
+<img src="https://dl.dropboxusercontent.com/s/ir2vm6cyo3gl1v8/pos-instalacao.png" alt="Após a instalação, limpe os caches, rode a compilação, faça logout e login." title="Após a instalação, limpe os caches, rode a compilação, faça logout e login." />
 
 *Obs: É necessário configurar o parâmetro do PHP: <strong>date.timezone</strong> Saiba mais em: http://php.net/manual/pt_BR/datetime.configuration.php#ini.date.timezone*
 
