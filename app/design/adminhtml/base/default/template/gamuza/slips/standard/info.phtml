@@ -69,7 +69,11 @@ function GamuzaPaymentPopup (form)
 </script>
 <?php endif; ?>
 
+<?php if(!$this->getInvoice()): ?> 
+
 <?php echo $this->getPaymentInfoHtml (); ?>
+
+<?php endif; ?>
 
 <?php if (!strcmp ($this->getRequest()->getControllerName(), 'onepage')): ?>
 <script type="text/javascript">
@@ -80,3 +84,4 @@ $('slips_submit_form').submit.click ();
 <?php endif; ?>
 
 <?php echo $this->getChildHtml(); ?>
+
