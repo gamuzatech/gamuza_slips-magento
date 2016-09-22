@@ -69,7 +69,7 @@ function GamuzaPaymentPopup (form)
 </script>
 <?php endif; ?>
 
-<?php if(!$this->getInvoice()): ?> 
+<?php if(!$this->getInvoice() && !$this->getShipment()): ?>
 
 <?php echo $this->getPaymentInfoHtml (); ?>
 

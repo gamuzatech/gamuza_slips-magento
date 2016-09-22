@@ -74,6 +74,11 @@ public function getInvoice()
     return Mage::registry('current_invoice');
 }
 
+public function getShipment()
+{
+    return Mage::registry('current_shipment');
+}
+
 public function _getStoreConfig ($field)
 {
 	return Mage::getStoreConfig ("payment/slips_settings/{$field}");
