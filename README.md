@@ -2,7 +2,7 @@
 
 **Compatível com a plataforma Magento CE versão 1.6 a 1.9**
 
-[Necessário módulo Gamuza_Utils](https://github.com/gamuzabrasil/gamuza_utils-magento)
+[Necessário módulo Gamuza_Utils](https://github.com/gamuzatech/gamuza_utils-magento)
 
 Com o nosso módulo de boletos, você tem todas as opção para os bancos mais comuns do dia-a-dia e ainda tem a funcionalidade de depósitos.
 
@@ -18,7 +18,7 @@ E o seu cliente tem um anti-popup, não se preocupe. Nós avisaremos os seus cli
 
     $ cd /path/to/magento
     $ modgit init
-    $ modgit add gamuza_slips https://github.com/gamuzabrasil/gamuza_slips-magento.git
+    $ modgit add gamuza_slips https://github.com/gamuzatech/gamuza_slips-magento.git
 
 **Instalação manual dos arquivos**
 
