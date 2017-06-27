@@ -161,6 +161,7 @@ public function getPaymentInfoHtml ($ccType)
 	 */
 	$company_address = Mage::getStoreConfig ('general/store_information/address');
 	$company_name = Mage::getStoreConfig ('general/store_information/name');
+    $company_taxvat = Mage::getStoreConfig ('general/store_information/taxvat');
 	$company_logo_url = $this->_getCompanyLogoUrl ();
 	$fieldset->addField("company_address", "hidden", array(
 	"name" => 'company_address',
@@ -169,6 +170,10 @@ public function getPaymentInfoHtml ($ccType)
 	$fieldset->addField("company_name", "hidden", array(
 	"name" => 'company_name',
 	"value" => $company_name,
+	));
+	$fieldset->addField("company_taxvat", "hidden", array(
+	"name" => 'company_taxvat',
+	"value" => $company_taxvat,
 	));
 	$fieldset->addField("company_logo_url", "hidden", array(
 	"name" => 'company_logo_url',

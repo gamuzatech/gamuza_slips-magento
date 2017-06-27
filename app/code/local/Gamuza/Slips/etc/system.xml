@@ -36,6 +36,23 @@
 		</gamuza>
 	</tabs>
     <sections>
+        <general>
+            <groups>
+                <store_information>
+                    <fields>
+                        <taxvat translate="label">
+                            <label>VAT Number</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>28</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </taxvat>
+                    </fields>
+                </store_information>
+            </groups>
+        </general>
         <payment translate="label" module="slips">
             <tab>gamuza</tab>
 			<sort_order>2000</sort_order>
