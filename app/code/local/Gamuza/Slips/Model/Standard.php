@@ -35,6 +35,7 @@ protected $_code = 'slips_standard';
 protected $_canOrder                = true;
 protected $_canAuthorize            = false;
 protected $_canCapture              = true;
+protected $_canRefund               = true;
 
 protected $_formBlockType = 'slips/standard_form';
 protected $_infoBlockType = 'slips/standard_info';
